@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/header";
+// import Footer from "./components/footer";
 
 // react router
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <RouterProvider router={router} />
+      {/* <Footer /> */}
     </div>
   );
 }
