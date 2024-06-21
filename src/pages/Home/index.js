@@ -8,6 +8,7 @@ import Accordion from "./accodian";
 import Insights from "./Insights ";
 import RecentSoldProperties from "./recentSoldProperties";
 import PropertyListing from "./propertyListing";
+import Carosal from "./carosal";
 
 function Index() {
   return (
@@ -26,6 +27,8 @@ function Index() {
       <PropertyListing />
       {/* RecentSoldProperties  */}
       <RecentSoldProperties />
+      {/* carosal  */}
+      <Carosal />
       {/* Accordion */}
       <Accordion />
       {/* Insights  */}

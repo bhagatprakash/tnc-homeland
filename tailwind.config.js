@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         banner: "url(./Assect/Image/bannerImage.png)",
+        newBanner: "url('./assect/Images/carosalImage.webp')",
         hight: "h-full",
       },
       boxShadow: {

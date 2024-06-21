@@ -27,7 +27,7 @@ function Footer() {
                 Discover your dream home with TNC Homeland Real Estate.
               </p>
               <div className="flex flex-col md:flex-row md:items-center my-3 text-gray-600">
-                <FaHome className="mr-2 text-2xl" />
+                <FaHome className="mr-2 text-3xl" />
                 <span>4XX7 Washington Ave. Manchester, Kentucky 394XX.</span>
               </div>
               <div className="flex flex-col md:flex-row md:items-center my-3 text-gray-600">
@@ -67,7 +67,7 @@ function Footer() {
                 Stay informed about the latest real estate trends and offerings.
                 Subscribe to the TNC Homeland newsletter for valuable insights.
               </p>
-              <form className="flex flex-col md:flex-row items-center my-3 md:space-x-4">
+              <form className="flex flex-col md:flex-row items-center my-3 md:space-x-1 ">
                 <input
                   type="email"
                   placeholder="example@gmail.com"
@@ -76,23 +76,23 @@ function Footer() {
                 <div className="w-full md:w-auto mt-2 md:mt-0">
                   <button
                     type="submit"
-                    className="px-6 py-3 w-full md:w-auto text-white font-semibold text-[18px] bg-red-500 hover:bg-yellow-500 duration-1000 opacity-70 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-40"
+                    className="px-6 py-3 w-full md:w-auto text-white font-semibold text-[18px] rounded bg-yellow-500 duration-1000 hover:bg-blue-800 hover:text-white "
                   >
                     <FaLocationArrow />
                   </button>
                 </div>
               </form>
-              <div className="flex flex-wrap gap-5 my-3">
-                <span className="p-2 border rounded-full bg-blue-900 text-white hover:bg-red-500 hover:text-white sm:text-2xl md:text-3xl">
+              <div className="flex flex-wrap justify-center lg:justify-start  gap-3 my-3">
+                <span className="p-1.5 border rounded-full bg-blue-900 text-white hover:bg-red-500 hover:text-white text-sm sm:text-base md:text-lg">
                   <FaFacebook />
                 </span>
-                <span className="p-2 border rounded-full bg-blue-900 text-white hover:bg-red-500 hover:text-white sm:text-2xl md:text-3xl">
+                <span className="p-1.5 border rounded-full shadow bg-white-900 text-red-500 hover:bg-red-500 hover:text-white text-sm sm:text-base md:text-lg">
                   <FaYoutube />
                 </span>
-                <span className="p-2 border rounded-full bg-blue-900 text-white hover:bg-red-500 hover:text-white sm:text-2xl md:text-3xl">
+                <span className="p-1.5 border rounded-full shadow  text-blue-500 hover:bg-red-500 hover:text-white text-sm sm:text-base md:text-lg">
                   <FaTwitter />
                 </span>
-                <span className="p-2 border rounded-full bg-blue-900 text-white hover:bg-red-500 hover:text-white sm:text-2xl md:text-3xl">
+                <span className="p-1.5 border rounded-full shadow  text-red-500 hover:bg-red-500 hover:text-white text-sm sm:text-base md:text-lg">
                   <FaInstagram />
                 </span>
               </div>

@@ -3,7 +3,7 @@ import about from "../../assect/Images/about us.webp";
 
 function AboutUs() {
   return (
-    <div className="max-w-[1320px] mx-auto my-[100px]">
+    <div className="max-w-[1320px] mx-auto ">
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative grid grid-cols-1 sm:text-center lg:grid-cols-2">
           <div className="relative flex items-center justify-center p-2 rounded-lg shadow-lg w-full h-[370px] lg:w-[500px] ml-0 lg:ml-10">
@@ -19,7 +19,7 @@ function AboutUs() {
           </div>
           <div className="text-left p-3 my-10 lg:my-1">
             <h2 className="text-[16px] text-yellow-500 font-bold">ABOUT US</h2>
-            <p className="text-[40px] font-bold">
+            <p className="text-[28px] lg:text-[40px] font-bold">
               Browse our Wide Selection of Luxury Properties
             </p>
             <p className="font-semibold text-gray-500 text-[18px] my-10">

@@ -1,13 +1,12 @@
 import React from "react";
 import { FetureData } from "../../assect/data/InsightsData";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Insights() {
   return (
     <div className="max-w-[1320px] mx-auto  my-10">
       <div className="my-5">
-        <h3 className="text-[18px] text-yellow-500 font-semibold">
-          LATEST NEWS
-        </h3>
+        <h3 className="text-[18px] text-yellow-500 font-bold">LATEST NEWS</h3>
         <h1 className="md:text-[36px] text-[23px] font-semibold text-center">
           Insights and Tips for Buying and Selling
         </h1>
@@ -22,7 +21,7 @@ function Insights() {
               key={index}
               className="my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000"
             >
-              <div className="h-[250px] overflow-hidden">
+              <div className="h-[250px] overflow-hidden ">
                 <img
                   src={card.image}
                   alt="card"

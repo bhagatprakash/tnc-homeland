@@ -2,7 +2,7 @@ import React from "react";
 
 function Question() {
   return (
-    <div className="max-w-[1320px] mx-auto my-[100px] px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[1320px] mx-auto lg:my-[100px] px-4 sm:px-6 lg:px-8">
       <div className="bg-accent/20">
         <div className="relative grid grid-cols-1 content-center bg-red-500 rounded-xl p-10  sm:text-center">
           <h1 className="text-white text-5xl my-3 font-bold sm:text-5xl text-center sm:text-left">

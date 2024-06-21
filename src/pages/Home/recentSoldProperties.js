@@ -3,11 +3,12 @@ import { FetureData } from "../../assect/data/recentSoldData";
 import { LuScale3D } from "react-icons/lu";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 
 function RecentSoldProperties() {
   return (
     <div className="max-w-[1320px] mx-auto  my-10">
-      <div className="my-5">
+      <div className="my-10">
         <h3 className="text-[18px] text-yellow-500 font-semibold">
           RECENT SOLD PROPERTIES
         </h3>
@@ -18,6 +19,7 @@ function RecentSoldProperties() {
           Sold by TNC Homeland
         </h2>
       </div>
+      <hr className="border-black mx-10 my-5" />
       <div className="bg-accent/20">
         <div className="max-w-[1320px] grid grid-cols-1 gap-[50px] content-center sm:text-center sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-12">
           {FetureData.map((card, index) => (
@@ -35,10 +37,16 @@ function RecentSoldProperties() {
                 <span className="absolute top-0 left-0 bg-red-500 mt-3 w-[55px] p-2 text-[15px] font-semibold text-white">
                   Sold
                 </span>
+
+                <div className="absolute bottom-0 left-0 mb-3 ml-3">
+                  <span className=" text-yellow-500 hover:bg-red-500 hover:text-white text-2xl sm:text-base md:text-lg">
+                    <FaLocationDot />
+                  </span>
+                </div>
               </div>
 
               <div className=" border-gray-300 my-4 ">
-                <div className="flex flex-wrap justify-center lg:justify-start space-x-2">
+                <div className="flex flex-wrap  lg:justify-start space-x-2">
                   <span className="py-1 text-[14px] px-5  mb-2 flex items-center">
                     <LuScale3D className="mr-2 text-red-500 text-xl" />
                     <span className="font-semibold text-gray-600">

@@ -3,7 +3,7 @@ import { FetureData } from "../../assect/data/carddata";
 function Card() {
   return (
     <div className="my-20 max-w-[1320px] mx-auto">
-      <div className="my-5 ">
+      <div className="my-5  mx-10">
         <p className="text-[16px] text-yellow-500 text-right font-bold">
           WHY CHOOSE US
         </p>
@@ -13,7 +13,7 @@ function Card() {
         <h1 className="md:text-[42px] text-[23px] font-semibold text-right">
           Wide Selection of Luxury Properties
         </h1>
-        <hr className="h-[1px] opacity-90 my-5 bg-black" />
+        <hr className="border-black  my-5" />
       </div>
       <div className="bg-accent/20">
         <div className="grid grid-cols-1 gap-6 text-center md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 px-4 md:px-12">

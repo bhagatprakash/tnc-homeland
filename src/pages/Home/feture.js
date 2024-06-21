@@ -6,7 +6,7 @@ import { FaBath } from "react-icons/fa6";
 
 function FetureSection() {
   return (
-    <div className="max-w-[1320px] mx-auto my-[100px]">
+    <div className="max-w-[1320px] mx-auto lg:my-[100px]">
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative grid grid-cols-1 sm:text-center lg:grid-cols-2">
           <div className="text-left p-3 my-10 lg:my-1">
@@ -29,7 +29,7 @@ function FetureSection() {
               everyone.
             </p>
             <div className=" border-gray-300">
-              <div className="flex flex-wrap justify-center lg:justify-start space-x-2">
+              <div className="flex flex-wrap  lg:justify-start space-x-2">
                 <span className="py-1 text-[14px] px-5 bg-gray-200 mb-2 flex items-center">
                   <LuScale3D className="mr-2 text-red-500 text-xl" />
                   <span className="font-semibold text-gray-600">960 SqFt</span>
