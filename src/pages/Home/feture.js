@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../assect/Images/about us.webp";
+import about from "../../assect/Images/cardtwo-2.png";
 import { LuScale3D } from "react-icons/lu";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
