@@ -3,7 +3,7 @@ import { FetureData } from "../../assect/data/carddata";
 function Card() {
   return (
     <div className="my-20 max-w-[1320px] mx-auto">
-      <div className="my-5  mx-10">
+      <div className="my-5  mx-10" data-aos="fade-left">
         <p className="text-[16px] text-yellow-500 text-right font-bold">
           WHY CHOOSE US
         </p>
@@ -16,7 +16,10 @@ function Card() {
         <hr className="border-black  my-5" />
       </div>
       <div className="bg-accent/20">
-        <div className="grid grid-cols-1 gap-6 text-center md:grid-cols-3 xl:grid-cols-4 lg:grid-cols-4 px-4 md:px-12">
+        <div
+          className="grid md:grid-cols-3 grid-cols-2 gap-6 text-center  lg:grid-cols-4 px-4 md:px-12"
+          data-aos="fade-up"
+        >
           {FetureData.map((card, index) => (
             <div
               key={index}

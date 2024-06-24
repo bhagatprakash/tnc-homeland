@@ -6,10 +6,10 @@ import { FaBath } from "react-icons/fa6";
 
 function FetureSection() {
   return (
-    <div className="max-w-[1320px] mx-auto lg:my-[100px]">
+    <div className="max-w-[1320px] mx-auto lg:my-[100px] ">
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative grid grid-cols-1 sm:text-center lg:grid-cols-2">
-          <div className="text-left p-3 my-10 lg:my-1">
+          <div className="text-left p-3 my-10 lg:my-1" data-aos="fade-right">
             <h2 className="text-[16px] text-yellow-500 font-semibold">
               FEATURED OF MONTH
             </h2>
@@ -50,7 +50,10 @@ function FetureSection() {
             </button>
           </div>
 
-          <div className="relative flex items-center justify-center p-2 rounded-lg shadow-lg w-full h-[370px] lg:w-[500px] ml-0 lg:ml-10">
+          <div
+            className="relative flex items-center justify-center p-2 rounded-lg shadow-lg w-full h-[370px] lg:w-[500px] ml-0 lg:ml-10"
+            data-aos="fade-left"
+          >
             <img
               src={about}
               alt="properties"

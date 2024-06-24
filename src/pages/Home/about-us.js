@@ -12,7 +12,10 @@ function AboutUs() {
               alt="properties"
               className="w-full h-full object-cover object-center"
             />
-            <span className="absolute bottom-2 left-10 bg-white p-3 rounded-xl">
+            <span
+              className="absolute bottom-2 left-10 bg-white p-3 rounded-xl"
+              data-aos="fade-right"
+            >
               <h1 className="text-5xl text-red-500 font-bold">5</h1>
               <p className="text-[18px] text-gray-500">Global Top Awards</p>
             </span>

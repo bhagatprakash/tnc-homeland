@@ -67,9 +67,15 @@ function Carousel() {
   return (
     <>
       <div className="bg-gray-100">
-        <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row  md:bg-newBanner bg-no-repeat relative bg-right-bottom bg-none bg-contain">
+        <div
+          className="max-w-[1320px] mx-auto flex flex-col md:flex-row  md:bg-newBanner bg-no-repeat  relative bg-right-bottom bg-none bg-contain"
+          data-aos="fade-up"
+        >
           <div className="my-20">
-            <div className="bg-accent/20 grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1">
+            <div
+              className="bg-accent/20 grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1"
+              data-aos="fade-right"
+            >
               <Slider {...settings}>
                 {testimonials.map((testimonial, index) => (
                   <div key={index} className="px-2 sm:px-4">

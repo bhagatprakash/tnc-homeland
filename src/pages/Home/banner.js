@@ -8,21 +8,30 @@ function Banner() {
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative flex flex-col-reverse lg:flex-row lg:gap-[50px] items-center sm:text-center">
           <div className="text-left p-3 my-10 lg:my-1">
-            <p className="text-[28px] lg:text-[40px] font-bold">
+            <p
+              className="text-[28px] lg:text-[40px] font-bold"
+              data-aos="fade-down"
+            >
               "YOUR DREAM HOME AWAITS."
             </p>
-            <span className="text-yellow-500 text-[28px] lg:text-[35px] font-semibold">
+            <span
+              className="text-yellow-500 text-[28px] lg:text-[35px] font-semibold"
+              data-aos="fade-down"
+            >
               - seize the opportunity today!
             </span>
 
-            <p className="font-semibold text-gray-500 text-[18px] my-10">
+            <p
+              className="font-semibold text-gray-500 text-[18px] my-10"
+              data-aos="fade-up"
+            >
               Welcome to TNC Real Estate, where we're dedicated to making your
               dream home a reality. Explore our range of exceptional properties
               in sought-after locations. Experience a new level of personalized
               service as we guide you through finding the perfect property.
             </p>
 
-            <div className="flex my-10">
+            <div className="flex my-10" data-aos="fade-up">
               <button className="w-[80px] px-3 py-3 bg-yellow-500 text-white font-bold">
                 Rent
               </button>
@@ -48,7 +57,10 @@ function Banner() {
               </form>
             </div>
           </div>
-          <div className="p-2 rounded-lg shadow-lg mx-auto w-full max-w-[500px] h-[370px]">
+          <div
+            className="p-2 rounded-lg shadow-lg mx-auto w-full max-w-[500px] h-[370px] "
+            data-aos="fade-left"
+          >
             <img
               src={propeties}
               alt="properties"
