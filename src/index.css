@@ -18,3 +18,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.content {
+  display: none;
+}
+.show-content {
+  display: block;
+}

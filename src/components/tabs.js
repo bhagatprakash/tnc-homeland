@@ -1,8 +1,6 @@
 import React from "react";
 
 const Tabs = ({ activeTab, onTabClick }) => {
-  console.log("activeTab", activeTab);
-  //   console.log("onTabClick", onTabClick);
   const tabs = [
     "All",
     "newListing",

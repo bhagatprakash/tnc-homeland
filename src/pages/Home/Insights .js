@@ -25,6 +25,7 @@ function Insights() {
                 <img
                   src={card.image}
                   alt="card"
+                  style={{ objectFit: "cover" }}
                   className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
                 />
               </div>

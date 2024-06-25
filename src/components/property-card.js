@@ -21,6 +21,7 @@ const PropertyCard = ({
           src={image}
           alt="card"
           className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
+          style={{ objectFit: "cover" }}
         />
         <span className="absolute top-0 left-0 bg-red-500 mt-3 w-[55px] p-2 text-[15px] font-semibold text-white">
           {stats}
