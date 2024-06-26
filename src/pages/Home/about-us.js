@@ -6,20 +6,21 @@ function AboutUs() {
     <div className="max-w-[1320px] mx-auto ">
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative grid grid-cols-1 sm:text-center lg:grid-cols-2">
-          <div className="relative flex items-center justify-center p-2 rounded-lg shadow-lg w-full h-[370px] lg:w-[500px] ml-0 lg:ml-10">
+          <div class="relative flex items-center justify-center p-2 rounded-lg shadow-lg w-full h-[370px] lg:w-[500px] ml-0 lg:ml-10">
             <img
               src={about}
               alt="properties"
-              className="w-full h-full object-cover object-center"
+              className=" h-full object-cover object-center"
             />
             <span
-              className="absolute bottom-2 left-10 bg-white p-3 rounded-xl"
+              class="absolute bottom-2 lg:left-10  left-22 bg-white p-3 rounded-xl"
               data-aos="fade-right"
             >
-              <h1 className="text-5xl text-red-500 font-bold">5</h1>
+              <h1 class="text-5xl text-red-500 font-bold">5</h1>
               <p className="text-[18px] text-gray-500">Global Top Awards</p>
             </span>
           </div>
+
           <div className="text-left p-3 my-10 lg:my-1">
             <h2 className="text-[16px] text-yellow-500 font-bold">ABOUT US</h2>
             <p className="text-[28px] lg:text-[40px] font-bold">

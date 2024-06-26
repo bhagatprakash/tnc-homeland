@@ -57,9 +57,9 @@ function FetureSection() {
             <img
               src={about}
               alt="properties"
-              className="w-full h-full  object-cover object-center"
+              className=" h-full  object-cover object-center"
             />
-            <span className="absolute bottom-2 left-10 bg-white p-3 rounded-xl">
+            <span className="absolute bottom-2 lg:left-10  left-22 bg-white p-3 rounded-xl">
               <h1 className="text-4xl sm:text-5xl text-red-500 font-bold">5</h1>
               <p className="text-[16px] sm:text-[18px] text-gray-500">
                 Global Top Awards
