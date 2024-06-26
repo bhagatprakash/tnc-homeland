@@ -11,7 +11,6 @@ function AboutUs() {
               src={about}
               alt="properties"
               className="w-full h-full object-cover object-center"
-              style={{ objectFit: "cover" }}
             />
             <span
               className="absolute bottom-2 left-10 bg-white p-3 rounded-xl"

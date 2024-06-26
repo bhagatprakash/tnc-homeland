@@ -6,7 +6,6 @@ import { properties } from "../../assect/data/tabData";
 const PropertyListing = () => {
   const [activeTab, setActiveTab] = useState("All");
   const handleTabClick = (tab) => {
-    console.log("tab", tab);
     setActiveTab(tab);
   };
 

@@ -39,7 +39,7 @@ function Banner() {
             <div className="flex my-10" data-aos="fade-up">
               <button
                 className={`w-[80px] px-3 py-3 ${
-                  toggle == 1
+                  toggle === 1
                     ? "bg-yellow-500 text-white"
                     : "bg-gray-100 text-black"
                 }  font-bold`}
@@ -49,7 +49,7 @@ function Banner() {
               </button>
               <button
                 className={`w-[80px] px-3 py-3 ${
-                  toggle == 2
+                  toggle === 2
                     ? "bg-yellow-500 text-white"
                     : "bg-gray-100 text-black"
                 }  font-bold`}
@@ -98,8 +98,7 @@ function Banner() {
             <img
               src={propeties}
               alt="properties"
-              className="w-full h-full object-cover object-center rounded-lg"
-              style={{ objectFit: "cover" }}
+              className="w-full h-full object-cover object-center rounded-lg "
             />
           </div>
         </div>

@@ -21,7 +21,6 @@ const PropertyCard = ({
           src={image}
           alt="card"
           className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
-          style={{ objectFit: "cover" }}
         />
         <span className="absolute top-0 left-0 bg-red-500 mt-3 w-[55px] p-2 text-[15px] font-semibold text-white">
           {stats}
@@ -33,14 +32,6 @@ const PropertyCard = ({
         </div>
       </div>
       <div className="p-4">
-        {/* <span
-          className={`inline-block px-2 py-1 text-white rounded-full ${
-            type === "Sale" ? "bg-red-500" : "bg-yellow-500"
-          }`}
-        >
-          {type}
-        </span> */}
-
         <div className=" border-gray-300 my-4 ">
           <div className="flex flex-wrap  lg:justify-start ">
             <span className="py-1 text-[12px] px-5  mb-2 flex items-center">

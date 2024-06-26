@@ -1,6 +1,6 @@
 import React from "react";
 import { FetureData } from "../../assect/data/InsightsData";
-import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Insights() {
   return (
@@ -25,15 +25,14 @@ function Insights() {
                 <img
                   src={card.image}
                   alt="card"
-                  style={{ objectFit: "cover" }}
                   className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
                 />
               </div>
-              <a href="#">
+              <Link>
                 <h5 className="my-3 text-[20px] mx-4 font-semibold tracking-tight text-gray-900 dark:text-white text-left">
                   {card.contant}
                 </h5>
-              </a>
+              </Link>
               <div className="flex justify-between items-center p-4">
                 <p className="my-2 text-[18px] text-yellow-500 font-semibold dark:text-gray-400">
                   {card.heading}

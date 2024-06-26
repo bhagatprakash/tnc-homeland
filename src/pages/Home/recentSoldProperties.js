@@ -4,6 +4,7 @@ import { LuScale3D } from "react-icons/lu";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function RecentSoldProperties() {
   return (
@@ -31,7 +32,6 @@ function RecentSoldProperties() {
                 <img
                   src={card.image}
                   alt="card"
-                  style={{ objectFit: "cover" }}
                   className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
                 />
 
@@ -69,11 +69,11 @@ function RecentSoldProperties() {
                 </div>
               </div>
 
-              <a href="#">
+              <Link>
                 <h5 className="my-3 text-[20px] mx-4 font-semibold tracking-tight text-gray-900 dark:text-white text-left">
                   {card.type}
                 </h5>
-              </a>
+              </Link>
 
               <p className="mb-3 text-[15px] mx-4 text-gray-500 dark:text-gray-400 text-left">
                 {card.location}

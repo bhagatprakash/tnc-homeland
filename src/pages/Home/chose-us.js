@@ -1,5 +1,6 @@
 import React from "react";
 import { FetureData } from "../../assect/data/carddata";
+import { Link } from "react-router-dom";
 function Card() {
   return (
     <div className="my-20 max-w-[1320px] mx-auto">
@@ -29,15 +30,14 @@ function Card() {
                 <img
                   src={card.image}
                   alt="card"
-                  style={{ objectFit: "cover" }}
-                  className="h-[110px] w-[100px]"
+                  className="h-[110px] w-[100px] object-cover object-fit"
                 />
               </div>
-              <a href="#">
+              <Link>
                 <h5 className="my-2 text-[18px] mx-4 tracking-tight text-gray-700 dark:text-white text-center">
                   {card.type}
                 </h5>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

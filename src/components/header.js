@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import HeaderImage from "../assect/Images/header image.webp";
+import { Link } from "react-router-dom";
 
 function Header() {
   useEffect(() => {
@@ -16,7 +17,11 @@ function Header() {
       <header className="bg-gray-100 p-5 sticky top-0 z-50">
         <nav className="flex flex-wrap items-end justify-between lg:px-20">
           <div>
-            <img src={HeaderImage} className="h-[40px]" alt="header-image" />
+            <img
+              src={HeaderImage}
+              className="h-[40px] object-cover object-fit"
+              alt="header-image"
+            />
           </div>
           <div className="flex lg:hidden">
             <button id="hamburger">
@@ -35,10 +40,7 @@ function Header() {
             </button>
           </div>
           <div className="toggle w-full lg:w-auto lg:flex row-gap-25 text-bold mt-5 md:mt-0 md:border-none hidden">
-            <a
-              href="#"
-              className="block text-[18px] text-gray-600 px-3 py-3 text-center"
-            >
+            <a className="block text-[18px] text-gray-600 px-3 py-3 text-center">
               About
             </a>
             <a
