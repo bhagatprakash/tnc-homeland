@@ -7,11 +7,21 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // pages
 import Home from "./pages/Home";
+import PropertyDetails from "./pages/Home/propertyDetails";
+import NewsDetails from "./pages/Home/newsDatils";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/proptype_card",
+    element: <PropertyDetails />,
+  },
+  {
+    path: "/news_deatils",
+    element: <NewsDetails />,
   },
 ]);
 

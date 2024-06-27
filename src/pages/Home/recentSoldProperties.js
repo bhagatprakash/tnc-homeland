@@ -29,11 +29,13 @@ function RecentSoldProperties() {
               className="my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000"
             >
               <div className="h-[225px] overflow-hidden relative">
-                <img
-                  src={card.image}
-                  alt="card"
-                  className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
-                />
+                <Link to={"/proptype_card"}>
+                  <img
+                    src={card.image}
+                    alt="card"
+                    className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
+                  />
+                </Link>
 
                 <span className="absolute top-0 left-0 bg-red-500 mt-3 w-[55px] p-2 text-[15px] font-semibold text-white">
                   Sold

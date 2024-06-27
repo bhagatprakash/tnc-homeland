@@ -22,11 +22,13 @@ function Insights() {
               className="my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000"
             >
               <div className="h-[250px] overflow-hidden ">
-                <img
-                  src={card.image}
-                  alt="card"
-                  className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
-                />
+                <Link to={"/news_deatils"}>
+                  <img
+                    src={card.image}
+                    alt="card"
+                    className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
+                  />
+                </Link>
               </div>
               <Link>
                 <h5 className="my-3 text-[20px] mx-4 font-semibold tracking-tight text-gray-900 dark:text-white text-left">

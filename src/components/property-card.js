@@ -3,6 +3,7 @@ import { LuScale3D } from "react-icons/lu";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const PropertyCard = ({
   sqft,
@@ -17,11 +18,13 @@ const PropertyCard = ({
   return (
     <div className="border rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-1000">
       <div className="h-[225px] overflow-hidden relative">
-        <img
-          src={image}
-          alt="card"
-          className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
-        />
+        <Link to={"/proptype_card"}>
+          <img
+            src={image}
+            alt="card"
+            className="w-full h-full object-cover object-center hover:scale-125 duration-1000"
+          />
+        </Link>
         <span className="absolute top-0 left-0 bg-red-500 mt-3 w-[55px] p-2 text-[15px] font-semibold text-white">
           {stats}
         </span>
