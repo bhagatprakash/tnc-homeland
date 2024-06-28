@@ -11,7 +11,7 @@ function NewsDetails() {
           <div className="w-full my-5 flex justify-center">
             <div className="w-[1320px] rounded-lg ">
               <div className="grid grid-cols-1 justify-between">
-                <h2 className="font-bold text-3xl  text-left">
+                <h2 className="font-bold text-3xl  text-left dark:text-white">
                   5 Simple Tips for Enhancing
                 </h2>
                 <p className="text-gray-500 text-[18px] text-left my-3">
@@ -24,37 +24,37 @@ function NewsDetails() {
               <img src={img} alt="image" className="object-cover rounded-lg" />
 
               <div className="my-5">
-                <h2 className="text-3xl text-left font-bold">
+                <h2 className="text-3xl text-left font-bold dark:text-white">
                   Tips from a Real Estate Expert
                 </h2>
 
-                <h3 className="my-3 text-gray-600 text-left">
+                <h3 className="my-3 text-gray-500 text-left">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less
                   normal distribution of letters, as opposed to using 'Content
                   here, content here', making it look like readable English.
                 </h3>
-                <h4 className=" text-gray-600 text-left">
+                <h4 className=" text-gray-500 text-left">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
                   form, by injected humour, or randomised words which don't look
                   even slightly believable.
                 </h4>
 
-                <p className="text-gray-900 text-left my-5">
+                <p className="text-gray-900  dark:text-gray-200 text-left my-5">
                   | Contrary to popular belief, Lorem Ipsum is not simply random
                   text.
                 </p>
               </div>
 
-              <hr class="h-0.5 w-full border-0 bg-current" />
+              <hr class="h-0.5 w-full border-0 bg-current dark:text-white" />
 
               <div className="grid grid-cols-1 gap-[50px] content-center sm:text-center sm:grid-cols-1 lg:grid-cols-2 ">
                 {FetureData.map((card, index) => (
                   <div
                     key={index}
-                    className="my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000"
+                    className="dark:border my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000 dark:bg-gulf-blue"
                   >
                     <div className="h-[250px] overflow-hidden ">
                       <img
@@ -79,14 +79,14 @@ function NewsDetails() {
               </div>
 
               <div className="max-w-xl mt-10 p-6  ">
-                <h2 className="text-2xl font-bold mb-6 text-left">
+                <h2 className="text-2xl font-bold mb-6 text-left dark:text-white">
                   Leave A Comment
                 </h2>
                 <form>
                   <div className="flex space-x-20">
                     <div className="mb-4">
                       <label
-                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                         htmlFor="name"
                       >
                         Name
@@ -100,7 +100,7 @@ function NewsDetails() {
                     </div>
                     <div className="mb-4">
                       <label
-                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                         htmlFor="email"
                       >
                         Email
@@ -115,7 +115,7 @@ function NewsDetails() {
                   </div>
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                       htmlFor="comment"
                     >
                       Comment

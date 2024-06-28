@@ -5,16 +5,16 @@ function Card() {
   return (
     <div className="my-20 max-w-[1320px] mx-auto">
       <div className="my-5  mx-10" data-aos="fade-left">
-        <p className="text-[16px] text-yellow-500 text-right font-bold">
+        <p className="text-[16px] text-yellow-500 text-right font-bold dark:text-white">
           WHY CHOOSE US
         </p>
-        <h1 className="md:text-[42px] text-[23px] font-semibold text-right">
+        <h1 className="md:text-[42px] text-[23px] font-semibold text-right dark:text-white">
           Discover Your Dream Home: Browse our
         </h1>
-        <h1 className="md:text-[42px] text-[23px] font-semibold text-right">
+        <h1 className="md:text-[42px] text-[23px] font-semibold text-right dark:text-white">
           Wide Selection of Luxury Properties
         </h1>
-        <hr className="border-black  my-5" />
+        <hr className="border-black dark:border-white my-5" />
       </div>
       <div className="bg-accent/20">
         <div
@@ -34,7 +34,7 @@ function Card() {
                 />
               </div>
               <Link>
-                <h5 className="my-2 text-[18px] mx-4 tracking-tight text-gray-700 dark:text-white text-center">
+                <h5 className="my-2 text-[18px] mx-4 tracking-tight text-gray-700 dark:text-black  text-center">
                   {card.type}
                 </h5>
               </Link>

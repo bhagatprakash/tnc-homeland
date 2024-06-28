@@ -16,7 +16,7 @@ const PropertyCard = ({
   stats,
 }) => {
   return (
-    <div className="border rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-1000">
+    <div className="border shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-1000">
       <div className="h-[225px] overflow-hidden relative">
         <Link to={"/proptype_card"}>
           <img
@@ -40,15 +40,22 @@ const PropertyCard = ({
             <span className="py-1 text-[12px] px-5  mb-2 flex items-center">
               <LuScale3D className="mr-2 text-red-500 text-xl" />
 
-              <span className="font-semibold text-gray-600"> {sqft} SqFt </span>
+              <span className="font-semibold text-gray-600 dark:text-white">
+                {" "}
+                {sqft} SqFt{" "}
+              </span>
             </span>
             <span className="py-2 text-[12px] px-5 mb-2 flex items-center">
               <FaBed className="mr-2 text-red-500 text-xl" />
-              <span className="font-semibold text-gray-600">{beds} Beds</span>
+              <span className="font-semibold text-gray-600 dark:text-white">
+                {beds} Beds
+              </span>
             </span>
             <span className="py-1 text-[12px] px-5  mb-2 flex items-center">
               <FaBath className="mr-2 text-red-500 text-xl" />
-              <span className="font-semibold text-gray-600">{baths} Baths</span>
+              <span className="font-semibold text-gray-600 dark:text-white">
+                {baths} Baths
+              </span>
             </span>
           </div>
         </div>
@@ -56,12 +63,12 @@ const PropertyCard = ({
           {title}
         </div>
 
-        <div className="mb-3 text-[15px] mx-4 text-gray-500 dark:text-gray-400 text-left">
+        <div className="mb-3 text-[15px] mx-4 text-gray-500  text-left dark:text-white">
           {description}
         </div>
 
         <div className="flex justify-between items-center p-4">
-          <div className="my-2 text-[20px] text-red-500 font-bold dark:text-gray-400">
+          <div className="my-2 text-[20px] text-red-500 font-bold  dark:text-white">
             ${price}
           </div>
           <button className="bg-yellow-500 text-white font-semibold py-2 px-4 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-2 lg:px-5">

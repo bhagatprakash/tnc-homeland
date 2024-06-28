@@ -13,16 +13,16 @@ function FetureSection() {
             <h2 className="text-[16px] text-yellow-500 font-semibold">
               FEATURED OF MONTH
             </h2>
-            <p className="text-[30px] sm:text-[40px] font-semibold">
+            <p className="text-[30px] sm:text-[40px] font-semibold dark:text-white">
               Stunning Three-Bedroom
             </p>
-            <h2 className="text-[30px] sm:text-[40px] font-semibold">
+            <h2 className="text-[30px] sm:text-[40px] font-semibold dark:text-white">
               Home with Spacious
             </h2>
-            <h3 className="text-[30px] sm:text-[40px] font-semibold">
+            <h3 className="text-[30px] sm:text-[40px] font-semibold dark:text-white">
               Backyard
             </h3>
-            <p className="  text-[15px] sm:text-[18px] my-5">
+            <p className="  text-[15px] sm:text-[18px] my-5 dark:text-gray-500">
               Explore Our Handpicked Selection of Premier Properties Across
               Various Budgets and Locations. Whether you're looking for a cozy
               apartment or a luxurious estate, TNC Real Estate has something for

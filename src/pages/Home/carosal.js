@@ -34,7 +34,7 @@ function Carousel() {
 
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 dark:bg-gulf-blue">
         <div
           className="max-w-[1320px] mx-auto flex flex-col md:flex-row  md:bg-newBanner bg-no-repeat  relative bg-right-bottom bg-none bg-contain"
           data-aos="fade-up"
@@ -49,13 +49,13 @@ function Carousel() {
                   <div key={index} className="px-2 sm:px-4">
                     <div className="p-4 sm:p-6  text-center">
                       <div className="flex text-left mb-2 sm:mb-4"></div>
-                      <p className="text-base sm:text-lg text-left italic text-gray-500 mb-2 sm:mb-4">
+                      <p className="text-base sm:text-lg text-left italic text-gray-500 dark:text-gray-200 mb-2 sm:mb-4">
                         "{testimonial.text}"
                       </p>
-                      <h3 className="text-lg sm:text-[20px] text-left font-semibold my-1">
+                      <h3 className="text-lg sm:text-[20px] text-left font-semibold my-1 dark:text-white">
                         {testimonial.author}
                       </h3>
-                      <p className="text-gray-600 text-[15px] text-left">
+                      <p className="text-gray-600 text-[15px] text-left dark:text-gray-50">
                         {testimonial.position}
                       </p>
                       <div className="flex text-left mb-2 sm:mb-4 my-5">
@@ -70,7 +70,7 @@ function Carousel() {
                           </svg>
                         ))}
                       </div>
-                      <hr className="border-black  my-5" />
+                      <hr className="border-black  my-5 dark:border-white" />
                     </div>
                   </div>
                 ))}

@@ -44,7 +44,9 @@ function PropertyDetails() {
             <div className="w-[1320px] rounded-lg ">
               <div className="grid grid-cols-2 justify-between">
                 <div>
-                  <h2 className="font-bold text-3xl  text-left">My Seattle</h2>
+                  <h2 className="font-bold text-3xl  text-left dark:text-white">
+                    My Seattle
+                  </h2>
                   <p className="text-gray-500 text-[18px] text-left my-3">
                     1901 Thornridge Cir. Shiloh, Hawaii 81063
                   </p>
@@ -93,7 +95,7 @@ function PropertyDetails() {
                 <div className="flex flex-wrap  lg:justify-start space-x-5">
                   <span className="py-1 text-[14px] px-5  mb-2 flex items-center bg-gray-200">
                     <LuScale3D className="mr-2 text-red-500 text-2xl" />
-                    <span className="font-semibold text-gray-600">
+                    <span className="font-semibold text-gray-600 ">
                       960 SqFt
                     </span>
                   </span>
@@ -108,17 +110,17 @@ function PropertyDetails() {
                 </div>
               </div>
               <div>
-                <h2 className="text-2xl text-left font-bold">
+                <h2 className="text-2xl text-left font-bold dark:text-white">
                   PROPERTY DESCRIPTION
                 </h2>
                 <hr className="h-0.5 bg-gray-400 w-[285px] my-2" />
-                <h3 className="my-3 text-gray-600">
+                <h3 className="my-3 text-gray-600 dark:text-gray-500">
                   Indulge in a unique blend of contemporary design and artistic
                   inspiration in this 3-bedroom loft. This space effortlessly
                   aligns modern living with creative allure, inviting you to
                   connect with its vibrant energy.
                 </h3>
-                <h4 className="text-left text-gray-600">
+                <h4 className="text-left text-gray-600 dark:text-gray-500">
                   As you step inside, an inviting connection forms between the
                   open layout and the surrounding cityscape. Each design element
                   invites you to explore further - from the subtle stroke of
@@ -130,7 +132,7 @@ function PropertyDetails() {
               <div className="container mx-auto my-10 px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h2 className="font-bold text-lg text-left">
+                    <h2 className="font-bold text-lg text-left dark:text-white">
                       ADDITIONAL DETAILS
                     </h2>
                     <hr className="h-0.5 bg-gray-400 w-[205px] my-5" />
@@ -140,8 +142,12 @@ function PropertyDetails() {
                           key={detail.label}
                           className="flex justify-between"
                         >
-                          <span className="font-semibold">{detail.label}</span>
-                          <span>{detail.value}</span>
+                          <span className="font-semibold dark:text-white">
+                            {detail.label}
+                          </span>
+                          <span className="dark:text-white">
+                            {detail.value}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -152,7 +158,7 @@ function PropertyDetails() {
                       {details.map((detail) => (
                         <div
                           key={detail.label}
-                          className="flex justify-between"
+                          className="flex justify-between dark:text-white"
                         >
                           <span className="font-semibold">{detail.label}</span>
                           <span>{detail.value}</span>
@@ -162,7 +168,7 @@ function PropertyDetails() {
                   </div>
                 </div>
                 <div className="mt-8">
-                  <h2 className="font-bold text-lg text-left mb-4">
+                  <h2 className="font-bold text-lg text-left mb-4 dark:text-white">
                     AMENITIES
                   </h2>
                   <hr className="h-0.5 bg-gray-400 w-[100px] my-5" />
@@ -170,7 +176,7 @@ function PropertyDetails() {
                     {amenities.map((amenity) => (
                       <div
                         key={amenity}
-                        className="flex items-center space-x-2"
+                        className="flex items-center space-x-2 dark:text-white"
                       >
                         <span className="text-red-500">✔</span>
                         <span>{amenity}</span>
@@ -184,11 +190,14 @@ function PropertyDetails() {
         </div>
       </div>
 
-      <div className="bg-gray-100 mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-5 px-5 sm:px-12 gap-5">
-        <h1 className="font-bold text-4xl mt-10">
+      <div className="bg-gray-100 dark:bg-gulf-blue mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-5 px-5 sm:px-12 gap-5">
+        <h1 className="font-bold text-4xl mt-10 dark:text-white">
           "Stunning Three-Bedroom Home with
         </h1>
-        <h2 className="font-bold text-4xl"> Spacious Backyard</h2>
+        <h2 className="font-bold text-4xl dark:text-white">
+          {" "}
+          Spacious Backyard
+        </h2>
         <div className="flex justify-center items-center mt-5">
           <iframe
             className="embedly-embed"
@@ -207,7 +216,7 @@ function PropertyDetails() {
       <div className="max-w-[1220px] mx-auto lg:my-[100px] px-4 sm:px-6 lg:px-8">
         <div className="bg-accent/20">
           <div className="relative grid grid-cols-1 content-center bg-red-500 rounded-xl p-10  sm:text-center">
-            <h1 className="text-white text-5xl my-3 font-bold sm:text-5xl text-center sm:text-left">
+            <h1 className="text-white text-5xl my-3 font-bold sm:text-5xl text-center sm:text-left ">
               Do you have questions?
             </h1>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-10 mt-5 sm:mt-0">
@@ -224,14 +233,16 @@ function PropertyDetails() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1320px]   mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-5 px-5 sm:px-12 gap-5 my-10">
+      <div className="max-w-[1320px]    mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 py-5 px-5 sm:px-12 gap-5 my-10">
         <section className="section ">
           <div className="secondary-container middle-allign">
             <span className="text-Bold text-orange-500">PROPERTY LOCATION</span>
-            <h2 className="font-bold text-4xl ">
+            <h2 className="font-bold text-4xl dark:text-white">
               "Prime Location: Your Gateway to
             </h2>
-            <h2 className="font-bold text-4xl">Desirable Living"</h2>
+            <h2 className="font-bold text-4xl dark:text-white">
+              Desirable Living"
+            </h2>
             <div className="full-width-block">
               <div className="map w-embed w-iframe my-10">
                 <iframe
@@ -250,12 +261,14 @@ function PropertyDetails() {
 
       <div className="max-w-[800px] mx-auto my-10 p-[10px]">
         <div>
-          <span className="text-Bold text-orange-500 my-2">CONTACT US</span>
-          <h2 className="font-semibold text-4xl ">"Get In Touch With Us</h2>
-          <h3 className="font-semibold text-4xl">
+          <span className="text-Bold text-orange-500 my-2 ">CONTACT US</span>
+          <h2 className="font-semibold text-4xl dark:text-white">
+            "Get In Touch With Us
+          </h2>
+          <h3 className="font-semibold text-4xl dark:text-white">
             Contact TNC Homeland Today!"
           </h3>
-          <p className="my-5">
+          <p className="my-5 dark:text-white">
             Align inspect link stroke thumbnail. Draft main group team overflow
             hand follower duplicate ipsum undo. Ellipse scrolling select
             follower subtract underline create. Component undo underline list
@@ -264,11 +277,11 @@ function PropertyDetails() {
         </div>
 
         <div>
-          <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+          <div className="dark:border max-w-md mx-auto bg-white p-8 rounded-lg shadow-md dark:bg-gulf-blue">
             <form>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                  className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                   htmlFor="name"
                 >
                   Name
@@ -282,7 +295,7 @@ function PropertyDetails() {
               </div>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                  className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                   htmlFor="phone"
                 >
                   Phone No
@@ -296,7 +309,7 @@ function PropertyDetails() {
               </div>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                  className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                   htmlFor="email"
                 >
                   Email
@@ -310,7 +323,7 @@ function PropertyDetails() {
               </div>
               <div className="mb-4">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                  className="block text-gray-700 text-sm font-bold mb-2 text-left dark:text-white"
                   htmlFor="message"
                 >
                   Message

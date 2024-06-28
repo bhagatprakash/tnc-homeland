@@ -9,12 +9,12 @@ function Banner() {
     setToggle(id);
   }
   return (
-    <div className="max-w-[1320px] mx-auto lg:my-[100px]">
+    <div className=" max-w-[1320px] mx-auto lg:my-[100px]">
       <div className="bg-accent/20">
         <div className="max-w-[1320px] relative flex flex-col-reverse lg:flex-row lg:gap-[50px] items-center sm:text-center">
           <div className="text-left p-3 my-10 lg:my-1">
             <p
-              className="text-[28px] lg:text-[40px] font-bold"
+              className="text-[28px] lg:text-[40px] font-bold dark:text-white"
               data-aos="fade-down"
             >
               "YOUR DREAM HOME AWAITS."

@@ -23,10 +23,10 @@ function AboutUs() {
 
           <div className="text-left p-3 my-10 lg:my-1">
             <h2 className="text-[16px] text-yellow-500 font-bold">ABOUT US</h2>
-            <p className="text-[28px] lg:text-[40px] font-bold">
+            <p className="text-[28px] lg:text-[40px] font-bold dark:text-white">
               Browse our Wide Selection of Luxury Properties
             </p>
-            <p className="font-semibold text-gray-500 text-[18px] my-10">
+            <p className="font-semibold text-gray-500 text-[18px] my-10  ">
               Discover Your Dream Home with TNC Real Estate. Our deep market
               insights and commitment to excellence ensure a seamless and
               enjoyable real estate journey.

@@ -21,11 +21,11 @@ const PropertyListing = () => {
           PROPERTY LISTINGS FOR SALE
         </h3>
 
-        <h1 className="md:text-[36px] text-[23px] font-semibold text-center">
+        <h1 className="md:text-[36px] text-[23px] font-semibold text-center dark:text-white">
           Discover Your Perfect Home - TNC
         </h1>
 
-        <h1 className="md:text-[36px] text-[23px] font-semibold text-center">
+        <h1 className="md:text-[36px] text-[23px] font-semibold text-center dark:text-white">
           HomeLand Sales and Listings
         </h1>
       </div>

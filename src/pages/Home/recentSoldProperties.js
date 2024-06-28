@@ -13,20 +13,20 @@ function RecentSoldProperties() {
         <h3 className="text-[18px] text-yellow-500 font-semibold">
           RECENT SOLD PROPERTIES
         </h3>
-        <h1 className="md:text-[36px] text-[23px] font-semibold text-center">
+        <h1 className="md:text-[36px] text-[23px] font-semibold text-center dark:text-white">
           Recent Sales Success - These Properties
         </h1>
-        <h2 className="md:text-[36px] text-[23px] font-semibold text-center">
+        <h2 className="md:text-[36px] text-[23px] font-semibold text-center dark:text-white">
           Sold by TNC Homeland
         </h2>
       </div>
-      <hr className="border-black mx-10 my-5" />
+      <hr className="border-black mx-10 my-5 dark:border-white" />
       <div className="bg-accent/20">
         <div className="max-w-[1320px] grid grid-cols-1 gap-[50px] content-center sm:text-center sm:grid-cols-2 lg:grid-cols-3 px-4 sm:px-12">
           {FetureData.map((card, index) => (
             <div
               key={index}
-              className="my-6 bg-white shadow-lg w-full sm:w-auto transform transition-transform hover:scale-105 duration-1000"
+              className="border my-6 bg-white shadow-lg w-full sm:w-auto transform  transition-transform hover:scale-105 duration-1000 dark:bg-gulf-blue"
             >
               <div className="h-[225px] overflow-hidden relative">
                 <Link to={"/proptype_card"}>
@@ -52,19 +52,19 @@ function RecentSoldProperties() {
                 <div className="flex flex-wrap  lg:justify-start space-x-2">
                   <span className="py-1 text-[14px] px-5  mb-2 flex items-center">
                     <LuScale3D className="mr-2 text-red-500 text-xl" />
-                    <span className="font-semibold text-gray-600">
+                    <span className="font-semibold text-gray-600 dark:text-white">
                       {card.squre}
                     </span>
                   </span>
-                  <span className="py-2 text-[14px] px-5 mb-2 flex items-center">
+                  <span className="py-2 text-[14px] px-5 mb-2 flex items-center ">
                     <FaBed className="mr-2 text-red-500 text-xl" />
-                    <span className="font-semibold text-gray-600">
+                    <span className="font-semibold text-gray-600 dark:text-white">
                       {card.bedrooms}
                     </span>
                   </span>
                   <span className="py-1 text-[14px] px-5  mb-2 flex items-center">
                     <FaBath className="mr-2 text-red-500 text-xl" />
-                    <span className="font-semibold text-gray-600">
+                    <span className="font-semibold text-gray-600 dark:text-white">
                       {card.bathrooms}
                     </span>
                   </span>
@@ -77,12 +77,12 @@ function RecentSoldProperties() {
                 </h5>
               </Link>
 
-              <p className="mb-3 text-[15px] mx-4 text-gray-500 dark:text-gray-400 text-left">
+              <p className="mb-3 text-[15px] mx-4 text-gray-500  text-left dark:text-white">
                 {card.location}
               </p>
 
               <div className="flex justify-between items-center p-4">
-                <p className="my-2 text-[20px] text-red-500 font-bold dark:text-gray-400">
+                <p className="my-2 text-[20px] text-red-500 font-bold  dark:text-white">
                   {card.price}
                 </p>
                 <button className="bg-yellow-500 text-white font-semibold py-2 px-4 sm:py-2 sm:px-4 md:py-3 md:px-5 lg:py-2 lg:px-5">

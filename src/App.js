@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import PropertyDetails from "./pages/Home/propertyDetails";
 import NewsDetails from "./pages/Home/newsDatils";
+import { useEffect } from "react";
 
 const router = createBrowserRouter([
   {
@@ -26,8 +27,14 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    let htmlClasses = document.querySelector("html").classList;
+    if (localStorage.theme === "dark") {
+      htmlClasses.add("dark");
+    }
+  }, []);
   return (
-    <div className="App">
+    <div className="App dark:bg-gulf-blue">
       <Header />
       <RouterProvider router={router} />
       <Footer />

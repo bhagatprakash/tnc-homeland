@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import HeaderImage from "../assect/Images/header image.webp";
-import { Link } from "react-router-dom";
+import ToggleButton from "./toggleButton";
 
 function Header() {
   useEffect(() => {
@@ -12,9 +12,21 @@ function Header() {
     };
   }, []);
 
+  const toggleDarkMode = () => {
+    let htmlClasses = document.querySelector("html").classList;
+
+    if (localStorage.theme === "dark") {
+      htmlClasses.remove("dark");
+      localStorage.removeItem("theme");
+    } else {
+      htmlClasses.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  };
+
   return (
     <>
-      <header className="bg-gray-100 p-5 sticky top-0 z-50">
+      <header className=" dark:bg-gulf-blue  bg-gray-100 p-5 sticky top-0 z-50">
         <nav className="flex flex-wrap items-end justify-between lg:px-20">
           <div>
             <img
@@ -23,16 +35,16 @@ function Header() {
               alt="header-image"
             />
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden dark:bg-white">
             <button id="hamburger">
               <img
-                className="toggle block"
+                className="toggle block "
                 src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
                 width="40"
                 height="40"
               />
               <img
-                className="toggle hidden"
+                className="toggle hidden "
                 src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
                 width="40"
                 height="40"
@@ -40,34 +52,43 @@ function Header() {
             </button>
           </div>
           <div className="toggle w-full lg:w-auto lg:flex row-gap-25 text-bold mt-5 md:mt-0 md:border-none hidden">
-            <a className="block text-[18px] text-gray-600 px-3 py-3 text-center">
-              About
-            </a>
-            <a
-              href="#"
-              className="block text-[18px] text-gray-600 px-3 py-3 text-center"
-            >
-              Featured
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 px-3 py-3 text-[17px] text-center"
-            >
-              Properties
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 px-3 py-3 text-[17px] text-center"
-            >
-              Testimonials
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 px-3 py-3 text-[17px] text-center"
-            >
-              News
-            </a>
-            <button className="sm:text-center text-center bg-red-500 text-[17px] px-8 py-2 rounded-lg text-white font-semibold border">
+            <ToggleButton onClick={toggleDarkMode} />
+            {[
+              {
+                text: "About",
+                href: "#",
+                additionalClasses: "dark:text-white text-[18px]",
+              },
+              {
+                text: "Featured",
+                href: "#",
+                additionalClasses: "text-[18px] dark:text-white",
+              },
+              {
+                text: "Properties",
+                href: "#",
+                additionalClasses: "text-[17px] dark:text-white",
+              },
+              {
+                text: "Testimonials",
+                href: "#",
+                additionalClasses: "text-[17px] dark:text-white",
+              },
+              {
+                text: "News",
+                href: "#",
+                additionalClasses: "text-[17px] dark:text-white",
+              },
+            ].map(({ text, href, additionalClasses }, index) => (
+              <a
+                key={index}
+                href={href}
+                className={`block text-gray-600 px-3 py-3 text-center ${additionalClasses}`}
+              >
+                {text}
+              </a>
+            ))}
+            <button className="sm:text-center text-center !bg-red-500 text-[17px] px-8 py-2 rounded-lg text-white font-semibold border">
               Contact us
             </button>
           </div>
